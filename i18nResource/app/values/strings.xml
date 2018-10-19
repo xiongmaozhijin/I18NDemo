@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">I18nDemo</string>
+    <string name="label1">The weather is cold.</string>
+    <string name="hello_tip">Hello, every body.
+ Second Lines</string>
+    <string name="title_from_attr">Hi, I'm good. title from attr xml</string>
+    <string name="html">Is your watch showing <big><b><font color="#FC381D">12</font></b></big> o'clock?</string>
+    <string name="string_from_string">@string/string_from_string_inner</string>
+    <string name="string_from_string_inner">Hey, string_from_string</string>
+    <string name="tv_string_from_string_another_file">@string/inner_tv_string_from_string_another_file</string>
+    <string name="str_empty" />
+    <string name="empty_2_str"/>
+	
+	  <string name="html">Is your watch showing <big><b><font color="#FC381D">12</font></b></big> o'clock?</string>
+</resources>

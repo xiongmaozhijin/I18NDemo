@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         tv_empty_str.setText(tipEmpty);
 
         String tipEmpty2 = getString(R.string.empty_2_str);
-        tv_empty_str2.setText(tipEmpty2);
+        tv_empty_str2.setText(tipEmpty2 + tipEmpty2.length());
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
