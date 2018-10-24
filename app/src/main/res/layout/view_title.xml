@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#FF485065"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ibtn_left"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/sel_btn_transparent_gray"
+        android:src="@drawable/btn_back" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/sel_btn_transparent_gray"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:text="Réinitialiser votre mot de passe" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sel_btn_transparent_gray"
+        android:minHeight="0dp"
+        android:minWidth="48dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/ibtn_right"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sel_btn_transparent_gray"
+        android:src="@drawable/btn_back" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/ibtn_right"
+        android:background="@drawable/sel_btn_transparent_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

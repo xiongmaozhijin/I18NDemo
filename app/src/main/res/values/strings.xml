@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">I18nDemo</string>
-    <string name="label1">The weather is cold.</string>
+    <string name="label1">The&#160;weather&#160;is&#160;cold.</string>
     <string name="hello_tip">Hello, every body.\n Second Lines</string>
     <string name="title_from_attr">Hi, I\'m good. title from attr xml</string>
     <string name="html">
@@ -16,10 +16,38 @@
 	
 
     </string>
-	
-	  <string name="html">
+
+    <string name="year_label">Year</string>
+    <string name="month_label">Month</string>
+    <string name="day_label">Day</string>
+    <string name="hour_label">h</string>
+    <string name="min_label">min</string>
+    <string name="btn_complete">OK</string>
+    <string name="btn_close">Close</string>
+
+    <string name="html2">
         <![CDATA[
        Is your watch showing <big><b><font color="#FC381D">12</font></b></big> o\'clock?
         ]]>
     </string>
+    <string name="save">Save</string>
+    <string name="home">Home</string>
+    <string name="txt_sex">sex</string>
+
+
+
+
+
+
+    <array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+
+
+
+
+
+
 </resources>

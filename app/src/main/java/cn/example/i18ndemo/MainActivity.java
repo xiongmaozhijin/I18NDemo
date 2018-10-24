@@ -9,9 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.applanga.android.Applanga;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,7 +63,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onBtnChange(View view) {
+    private OneWheelDialog _sex_wheel_dialog;
+
+    public void onIssuesDialog(View view) {
+        if (_sex_wheel_dialog == null) {
+            String[] sex = getResources().getStringArray(R.array.sex);
+            _sex_wheel_dialog = new OneWheelDialog(this, sex, 8, null, new OneWheelDialog.OnConfirmDataListener() {
+                @Override
+                public void onConfirm(String data) {
+
+                }
+            });
+            _sex_wheel_dialog.setLeftButtonText(R.string.txt_sex);
+        }
+        _sex_wheel_dialog.show();
     }
 
 }

@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <cn.example.i18ndemo.CustomTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:img_res_id_ibtn_left="@drawable/btn_back"
+        app:txt_btn_right="@string/save"
+        app:txt_tv_title="@string/home" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,8 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:onClick="onBtnChange"
-        android:text="ChangeLanguage"
-        android:visibility="invisible" />
+        android:onClick="onIssuesDialog"
+        android:text="onIssuesDialog"
+        android:visibility="visible" />
 
 </LinearLayout>

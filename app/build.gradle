@@ -26,7 +26,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.applanga.android:Applanga:2.0.96'
+    implementation 'com.applanga.android:Applanga:2.0.98'
+
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }
 
 repositories {
@@ -46,7 +49,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.applanga.android:plugin:2.0.96'
+        classpath 'com.applanga.android:plugin:2.0.98'
     }
 }
 apply plugin: 'applanga'
