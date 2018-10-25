@@ -48,6 +48,14 @@
 
 
 
+    <string name="scale_txt_piandi">Low</string>
+    <string name="scale_txt_piangao">High</string>
+    <string name="scale_txt_guogao">Too high</string>
+    <string name="scale_txt_pianshou">Underweight</string>
+    <string name="scale_txt_zhengchang">Normal</string>
+    <string name="scale_txt_pianpang">Overweight</string>
+    <string name="scale_txt_feipang">Obese</string>
+    <string name="scale_txt_biaozen">Normal</string>
 
 
 </resources>

@@ -24,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        TextView tvArrays = findViewById(R.id.tvArrays);
+        String[] stringArray = getResources().getStringArray(R.array.scale_fat_levels);
+        StringBuilder sb = new StringBuilder("");
+        for (String item : stringArray) {
+            sb.append(item);
+            sb.append("\n");
+        }
+        tvArrays.setText(sb.toString());
+
+
         tv_msg = findViewById(R.id.tv_msg);
         tv_html = findViewById(R.id.tv_html);
         tv_string_from_string = findViewById(R.id.tv_string_from_string);
