@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">&lt;values-zh&gt;I18nDemo</string>
+    <string name="label1">&lt;values-zh&gt;The&#160;weather&#160;is&#160;cold.</string>
+    <string name="hello_tip">&lt;values-zh&gt;Hello, every body.\n第二行呀</string>
+    <string name="title_from_attr">&lt;values-zh&gt;你好title from attr xml</string>
+    <string name="html">
+        <![CDATA[
+       Is your watch showing <big><b><font color="#FC381D">&lt;values-zh&gt;12</font></b></big> o\'clock?
+        ]]>
+    </string>
+    <string name="string_from_string">@string/string_from_string_inner</string>
+    <string name="string_from_string_inner">&lt;values-zh&gt;你好string_from_string</string>
+    <string name="tv_string_from_string_another_file">@string/inner_tv_string_from_string_another_file</string>
+    <string name="str_empty" />
+    <string name="empty_2_str" />
+    <string name="save">保存</string>
+    <string name="home">主页</string>
+    <string name="txt_sex">sex</string>
+
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+</resources>

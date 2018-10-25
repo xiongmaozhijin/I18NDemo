@@ -39,10 +39,10 @@
 
 
 
-    <array name="sex">
+    <string-array name="sex">
         <item>Male</item>
         <item>Female</item>
-    </array>
+    </string-array>
 
 
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inner_tv_string_from_string_another_file">&lt;values-zh&gt;从另一文件加载</string>
+</resources>
