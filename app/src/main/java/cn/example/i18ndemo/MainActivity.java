@@ -24,7 +24,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        issues20181025();
+        issues();
+        checkPermission();
+    }
 
+    private void checkPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
+    }
+
+    private void issues20181025() {
         TextView tvArrays = findViewById(R.id.tvArrays);
         String[] stringArray = getResources().getStringArray(R.array.scale_fat_levels);
         StringBuilder sb = new StringBuilder("");
@@ -33,8 +44,9 @@ public class MainActivity extends AppCompatActivity {
             sb.append("\n");
         }
         tvArrays.setText(sb.toString());
+    }
 
-
+    private void issues() {
         tv_msg = findViewById(R.id.tv_msg);
         tv_html = findViewById(R.id.tv_html);
         tv_string_from_string = findViewById(R.id.tv_string_from_string);
@@ -60,10 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
         String tipEmpty2 = getString(R.string.empty_2_str);
         tv_empty_str2.setText(tipEmpty2 + tipEmpty2.length());
-
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-        }
     }
 
 
